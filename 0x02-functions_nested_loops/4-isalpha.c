@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * main - check the code.
- *
+ * _isalpha - check the code.
+ * @c: value.
  * Return: Always 0.
  */
 
 int _isalpha(int c)
 {
-	if  (c >= 65 || c <= 122)
+	if  (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
 	{
 		return (1);
 	}
