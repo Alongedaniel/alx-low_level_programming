@@ -1,12 +1,7 @@
-#include <stdio.h>
+#include "main.h"
 
-void print_alphabet(void)
+void main(void)
 {
-	char alph = 'a';
-
-	for (alph = 'a'; alph <= 'z'; alph++)
-	{
-		printf("%c", alph);
-	}
+	print_alphabet();
 	putchar('\n');
 }
