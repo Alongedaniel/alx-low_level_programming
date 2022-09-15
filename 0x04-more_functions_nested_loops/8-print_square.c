@@ -1,30 +1,29 @@
 #include "main.h"
 
 /**
- * print_square - check the code.
- * @size: declared variable.
- * Return: Always 0.
+ * print_square - Print a square of single characters
+ * @size : the number n x n of the square
+ * Constraints -  use _putchar to print and use
+ * Return: void
  */
-
 void print_square(int size)
 {
-	int size;
-	int col;
-	int row;
+	int a;
+	int b;
 
-	if (size <= '0')
+	a = 0;
+
+	while (i < size && size > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (row = '0'; row < size; row++)
+		b = 0;
+		while (b < size)
 		{
-			for (col = '0'; col <= size - '1'; col++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
+			_putchar('#');
+			b++;
 		}
+		_putchar('\n');
+		a++;
 	}
+	if (a == 0)
+		_putchar('\n');
 }

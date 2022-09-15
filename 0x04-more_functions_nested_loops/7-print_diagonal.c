@@ -1,32 +1,28 @@
 #include "main.h"
 
 /**
- * print_diagonal - check the code.
- * @n: variable declared.
- * Return: Always 0.
+ * print_diagonal - Print a diagonal to the terminal
+ * @n: the number of \ characters to be printed to form the diagonal
+ * Return: void
  */
-
 void print_diagonal(int n)
 {
-	int n;
-	int row;
-	int space;
+	int a;
+	int b;
 
-	if (num <= '0')
+	a = 0;
+	while (a < n && n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (row = '0'; row <= num - '1'; row++)
+		b = 0;
+		while (b < i)
 		{
-			for (space = '0'; space <= row - '1'; space++)
-			{
-				_putchar(' ');
-			}
-			_putchar('\\');
-			_putchar('\n');
+			_putchar(' ');
+			b++;
 		}
+		_putchar('\\');
 		_putchar('\n');
+		a++;
 	}
+	if (a == 0)
+		_putchar('\n');
 }

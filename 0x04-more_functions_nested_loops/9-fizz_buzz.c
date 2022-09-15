@@ -1,35 +1,40 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * main - Print out all the numbers between one to 100
+ * Constraints - Print fizz for multiples of 3, Buzz for multiples of 5
+ * and fizz buzz for multiples of 5 and 3
+ * Return: void
  */
-
 int main(void)
 {
-	int num;
+	int i = 1;
 
-	for (num = 1; num <= 100; num++)
+	while (i <= 100)
 	{
-		if (num % 3 == 0 && num % 5 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
-		else if (num % 3 == 0)
+		else if (i % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (num % 5 == 0)
+		else if (i % 5 == 0)
 		{
 			printf("Buzz");
 		}
 		else
 		{
-			printf("%d", num);
+			printf("%i", i);
 		}
-		printf(" ");
+		if (i != 100)
+		{
+			putchar(' ');
+		}
+		i++;
 	}
-	printf("\n");
+	putchar('\n');
+
 	return (0);
 }
