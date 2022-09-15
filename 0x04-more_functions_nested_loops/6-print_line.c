@@ -11,13 +11,13 @@ void print_line(int n)
 	int n;
 	int col;
 
-	if (n <= 0)
+	if (n <= '0')
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (col = 0; col <= n - 1; col++)
+		for (col = '0'; col <= n - '1'; col++)
 		{
 			_putchar('-');
 		}
