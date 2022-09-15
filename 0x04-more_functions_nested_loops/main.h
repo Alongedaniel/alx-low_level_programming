@@ -10,4 +10,6 @@ void more_numbers(void);
 void print_line(int);
 void print_diagonal(int);
 void print_square(int);
+int _putchar(char);
+void print_triangle(int);
 #endif
