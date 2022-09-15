@@ -1,26 +1,18 @@
 #include "main.h"
 
 /**
- * print_line - check the code.
- * @n: variable declared.
- * Return: Always 0.
+ * print_line - print a straight line on the terminal using the _ character
+ * @n : number of _ to be printed
+ * Return: void
  */
-
 void print_line(int n)
 {
-	int n;
-	int col;
+	int i = 0;
 
-	if (n <= '0')
+	while (i < n && n > 0)
 	{
-		_putchar('\n');
+		_putchar('_');
+		i++;
 	}
-	else
-	{
-		for (col = '0'; col <= n - '1'; col++)
-		{
-			_putchar('-');
-		}
-		_putchar('\n');
-	}
+	_putchar('\n');
 }
