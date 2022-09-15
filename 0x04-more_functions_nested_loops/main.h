@@ -15,6 +15,7 @@ void print_diagonal(int);
 void print_square(int);
 int _putchar(char);
 void print_triangle(int);
+void print_number(int);
 
 
 
