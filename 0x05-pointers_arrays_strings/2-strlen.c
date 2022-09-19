@@ -1,5 +1,3 @@
-#include "main.h"
-#include <string.h>
 
 /**
  * _strlen - check the code
@@ -16,4 +14,5 @@ int _strlen(char *s)
 		len++;
 	}
 	s++;
+	return (len);
 }
