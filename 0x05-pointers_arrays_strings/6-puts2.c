@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts - check the code.
+ * puts2 - check the code.
  * @str: pointer declared.
  * Return: Always 0.
  */
