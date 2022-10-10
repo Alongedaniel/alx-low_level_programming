@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include "dog.h"
 
 /**
  * free_dog - free dog
@@ -8,10 +8,10 @@
 
 void free_dog(dog_t *d)
 {
-	if (d)
-	{
-		free(d->name);
-		free(d->owner);
-		free(d);
-	}
+	if (!d)
+		return;
+
+	free(d->name);
+       	free(d->owner);
+       	free(d);
 }
