@@ -1,10 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
-#include <string.h>
 
 /**
- * get_op_func - Sum of numbers
- * @s: operator
- * Return: Always 0
+ * get_op_func - compares the struct and proceed to operates.
+ * @s: operator string.
+ * Return: result.
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -17,7 +18,9 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i = 0;
+	int i;
+
+	i = 0;
 
 	while (ops[i].op)
 	{
